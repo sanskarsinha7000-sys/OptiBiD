@@ -1,0 +1,10 @@
+.git
+.vite
+frontend
+frontend_backup
+tests
+*.exe
+**/*.exe
+**/node_modules
+**/dist
+**/.env*

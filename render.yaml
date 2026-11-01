@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: optibid-api
+    runtime: docker
+    plan: free
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/auction
+    envVars:
+      - key: FRONTEND_ORIGIN
+        sync: false
